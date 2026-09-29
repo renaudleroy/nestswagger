@@ -32,7 +32,7 @@ export class AppController {
     return `This route has a schema for ID: ${id}`;
   }
 
-  @Get('query/:id')
+  @Get('query')
   @ApiQuery({
     name: 'id',
     description: 'The ID of the query parameter',
@@ -42,7 +42,7 @@ export class AppController {
     return `This route has no schema for ID: ${id}`;
   }
 
-  @Get('query-with-schema/:id')
+  @Get('query-with-schema')
   @ApiQuery({
     name: 'id',
     description: 'The ID of the query parameter with schema',
